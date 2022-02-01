@@ -75,6 +75,7 @@ function App() {
                   background={state.background}
                   color={state.color}
                   country="in"
+                  title="Top Headlines"
                   category="general"
                 />
               </Route>
@@ -86,6 +87,7 @@ function App() {
                   background={state.background}
                   color={state.color}
                   country="in"
+                  title="Sports"
                   category="sports"
                 />
               </Route>
@@ -98,6 +100,7 @@ function App() {
                   color={state.color}
                   country="in"
                   category="technology"
+                  title="Technology"
                 />
               </Route>
               <Route exact path="/business">
@@ -109,6 +112,7 @@ function App() {
                   color={state.color}
                   country="in"
                   category="business"
+                  title="Business"
                 />
               </Route>
               <Route exact path="/entertainment">
@@ -119,6 +123,7 @@ function App() {
                   background={state.background}
                   color={state.color}
                   country="in"
+                  title="Entertainment"
                   category="entertainment"
                 />
               </Route>
@@ -131,6 +136,7 @@ function App() {
                   color={state.color}
                   country="in"
                   category="general"
+                  title="General"
                   articles={articles}
                 />
               </Route>
@@ -143,6 +149,7 @@ function App() {
                   color={state.color}
                   country="in"
                   category="health"
+                  title="Health"
                 />
               </Route>
               <Route exact path="/science">
@@ -153,6 +160,7 @@ function App() {
                   background={state.background}
                   color={state.color}
                   country="in"
+                  title="Science"
                   category="science"
                 />
               </Route>

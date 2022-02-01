@@ -19,7 +19,7 @@ function NewsItem(props) {
           style={{
             flex: "30%",
             padding: "3px 3px",
-            border: "3px solid",
+            //border: "3px solid",
           }}
         >
           <div
@@ -51,7 +51,7 @@ function NewsItem(props) {
             {props.title}...
             <span
               class="position-absolute top-0  translate-middle badge rounded-pill bg-danger"
-              style={{ left: "90%", zIndex: "1" }}
+              style={{ left: "85%", zIndex: "1" }}
             >
               {props.source}
               <span class="visually-hidden">unread messages</span>
@@ -77,9 +77,12 @@ function NewsItem(props) {
 
 export default NewsItem;
 const Div = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 35% auto;
+
   flex-direction: row;
   @media (max-width: 768px) {
+    display: flex;
     flex-direction: column;
   }
 `;

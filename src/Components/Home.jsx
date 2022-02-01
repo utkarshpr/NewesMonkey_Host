@@ -39,13 +39,13 @@ function Home(props) {
             position: "fixed",
 
             bottom: "12%",
-            right: "34%",
+            right: "41%",
 
             color: `${props.color}`,
           }}
         >
           <div> 𝕸𝖆𝖉𝖊 𝖜𝖎𝖙𝖍 𝕷𝖔𝖛𝖊 💖</div>
-          <div style={{ color: "red" }}>
+          <div style={{ color: "red", fontSize: "0.8rem" }}>
             * as it is a free api so it cannot be use other than localhost{" "}
           </div>
         </div>

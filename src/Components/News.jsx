@@ -3,6 +3,7 @@ import NewsItem from "./NewsItem";
 import Zoom from "react-reveal/Zoom";
 import styled from "styled-components";
 import Spinner from "./Spinner";
+import "../index.css";
 import { articles } from "../general";
 export class News extends Component {
   static defaultProps = {
@@ -82,10 +83,10 @@ export class News extends Component {
     return (
       <>
         <h1
-          className="text-center"
-          style={{ color: color, background: background }}
+          className="  text-center py-1 "
+          style={{ color: color, background: background, fontSize: "4rem" }}
         >
-          NewsMonkey -Top HeadLines
+          NewsMonkey - {this.props.title}
         </h1>
         {this.state.loading && <Spinner background={background} />}
         <div style={{ background: background, height: "100%" }}>
