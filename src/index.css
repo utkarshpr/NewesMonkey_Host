@@ -1,0 +1,42 @@
+.footer {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.black-lives-matter {
+  animation-iteration-count: infinite;
+  font-size: 10vw;
+  line-height: 12vw;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoomout 10s ease 500ms forwards;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
